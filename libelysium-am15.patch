@@ -1,0 +1,31 @@
+--- libelysium-0.2.6/Makefile.am~	Tue Dec 11 11:55:02 2001
++++ libelysium-0.2.6/Makefile.am	Tue Dec 11 11:55:02 2001
+@@ -2,22 +2,16 @@
+ 
+ SUBDIRS = src
+ 
+-EXTRA_DIST = libelysium.spec.in
++EXTRA_DIST = libelysium.spec.in libelysiumConf.sh.in
+ 
+ dist-hook: libelysium.spec
+ 	cp libelysium.spec $(distdir)
+ 
+-EXTRA_DIST += \
+-	libelysiumConf.sh.in
+-
+ confexecdir=$(libdir)
+ confexec_DATA = libelysiumConf.sh
+ 
+ CLEANFILES = libelysiumConf.sh
+ 
+-confexecdir=$(libdir)
+-confexec_DATA = libelysiumConf.sh
+-
+ libelysiumConf.sh: libelysiumConf.sh.in Makefile
+ ## Use sed and then mv to avoid problems if the user interrupts.
+ 	sed -e 's?\@ELYSIUM_LIBDIR\@?$(ELYSIUM_LIBDIR)?g' \
+@@ -26,4 +20,3 @@
+             -e 's?\@VERSION\@?$(VERSION)?g' \
+               < $(srcdir)/libelysiumConf.sh.in > libelysiumConf.tmp \
+           && mv libelysiumConf.tmp libelysiumConf.sh
+-
