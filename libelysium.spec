@@ -5,13 +5,6 @@ Version:	0.2.6
 Release:	1
 License:	LGPL
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 Source0:	http://elysium.zoned.net/libelysium/%{name}-%{version}.tar.gz
 Patch0:		%{name}-am15.patch
 Patch1:		%{name}-ac_fixes.patch
@@ -32,13 +25,6 @@ Biblioteka narzЙdziowa dla aplikacji w dystrybucji Elysium GNU/Linux.
 Summary:	Elysium GNU/Linux Utilities Library Development Files
 Summary(pl):	Pliki dla programistСw u©ywaj╠cych biblioteki narzЙdziowej Elysium GNU/Linux
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 Obsoletes:	encompass-uri-devel
 
@@ -52,13 +38,6 @@ Pliki nagЁСwkowe do tworzenia aplikacji Elysium GNU/Linux.
 Summary:	Elysium GNU/Linux Utilities static library
 Summary(pl):	Statyczna biblioteka narzЙdziowa Elysium GNU/Linux
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 Obsoletes:	encompass-uri-devel
 
