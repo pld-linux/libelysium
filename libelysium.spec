@@ -1,4 +1,5 @@
 Summary:	Elysium GNU/Linux Utilities Library
+Summary(pl):	Biblioteka narzêdziowa Elysium GNU/Linux
 Name:		libelysium
 Version:	0.2.6
 Release:	1
@@ -24,8 +25,12 @@ Obsoletes:	encompass-uri
 Utility library for applications in the Elysium GNU/Linux
 distribution.
 
+%description -l pl
+Biblioteka narzêdziowa dla aplikacji w dystrybucji Elysium GNU/Linux.
+
 %package devel
 Summary:	Elysium GNU/Linux Utilities Library Development Files
+Summary(pl):	Pliki dla programistów u¿ywaj±cych biblioteki narzêdziowej Elysium GNU/Linux
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
 Group(es):	Desarrollo/Bibliotecas
@@ -38,11 +43,14 @@ Requires:	%{name} = %{version}
 Obsoletes:	encompass-uri-devel
 
 %description devel
-Libraries and includes files used for developing Elysium GNU/Linux
-applications.
+Includes files used for developing Elysium GNU/Linux applications.
+
+%description devel -l pl
+Pliki nag³ówkowe do tworzenia aplikacji Elysium GNU/Linux.
 
 %package static
 Summary:	Elysium GNU/Linux Utilities static library
+Summary(pl):	Statyczna biblioteka narzêdziowa Elysium GNU/Linux
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
 Group(es):	Desarrollo/Bibliotecas
@@ -56,6 +64,9 @@ Obsoletes:	encompass-uri-devel
 
 %description static
 Elysium GNU/Linux Utilities static library.
+
+%description static -l pl
+Statyczna biblioteka narzêdziowa Elysium GNU/Linux.
 
 %prep
 %setup -q
