@@ -1,16 +1,15 @@
 Summary:	Elysium GNU/Linux Utilities Library
 Summary(pl):	Biblioteka narzêdziowa Elysium GNU/Linux
 Name:		libelysium
-Version:	0.2.6
+Version:	0.3.5
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://elysium.zoned.net/libelysium/%{name}-%{version}.tar.gz
-Patch0:		%{name}-am15.patch
-Patch1:		%{name}-ac_fixes.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
+BuildRequires:	glib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	encompass-uri
 
@@ -26,6 +25,7 @@ Summary:	Elysium GNU/Linux Utilities Library Development Files
 Summary(pl):	Pliki dla programistów u¿ywaj±cych biblioteki narzêdziowej Elysium GNU/Linux
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
+Requires:	glib-devel
 Obsoletes:	encompass-uri-devel
 
 %description devel
@@ -49,8 +49,6 @@ Statyczna biblioteka narzêdziowa Elysium GNU/Linux.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
 
 %build
 rm -f missing
@@ -65,7 +63,8 @@ automake -a -c -f
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	pkgconfdir=%{_pkgconfigdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -79,9 +78,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/*Conf.sh
 %attr(755,root,root) %{_libdir}/lib*.so
-%{_includedir}/libelysium
+%attr(755,root,root) %{_libdir}/lib*.la
+%{_includedir}/gnome-1.0/libelysium
+%{_pkgconfigdir}/*
 
 %files static
 %defattr(644,root,root,755)
