@@ -6,6 +6,7 @@ Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://elysium.zoned.net/libelysium/%{name}-%{version}.tar.gz
+# Source0-md5:	3493b5af2ea76cfec69ccdabb3945068
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
