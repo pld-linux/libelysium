@@ -13,8 +13,10 @@ URL:		http://elysium-project.sourceforge.net/libraries/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	glib2-devel
+BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 2.4.23
+BuildRequires:	pkgconfig
 Requires:	libxml2 >= 2.4.23
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	encompass-uri
