@@ -1,3 +1,4 @@
+%bcond_without	static_libs	# don't build static library
 Summary:	Elysium GNU/Linux Utilities Library
 Summary(pl):	Biblioteka narzêdziowa Elysium GNU/Linux
 Name:		libelysium
@@ -65,7 +66,8 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	%{!?with_static_libs:--disable-static}
 
 %{__make}
 
@@ -93,6 +95,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/libelysium-2.0
 %{_pkgconfigdir}/*
 
+%if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/lib*.a
+%endif
