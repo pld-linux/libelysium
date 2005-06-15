@@ -1,4 +1,6 @@
+# Conditional build:
 %bcond_without	static_libs	# don't build static library
+#
 Summary:	Elysium GNU/Linux Utilities Library
 Summary(pl):	Biblioteka narzêdziowa Elysium GNU/Linux
 Name:		libelysium
