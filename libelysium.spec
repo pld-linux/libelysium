@@ -35,7 +35,7 @@ Biblioteka narzêdziowa dla aplikacji w dystrybucji Elysium GNU/Linux.
 Summary:	Elysium GNU/Linux Utilities Library Development Files
 Summary(pl):	Pliki dla programistów u¿ywaj±cych biblioteki narzêdziowej Elysium GNU/Linux
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	glib2-devel
 Requires:	libxml2-devel >= 2.4.23
 Obsoletes:	encompass-uri-devel
@@ -50,7 +50,7 @@ Pliki nag³ówkowe do tworzenia aplikacji Elysium GNU/Linux.
 Summary:	Elysium GNU/Linux Utilities static library
 Summary(pl):	Statyczna biblioteka narzêdziowa Elysium GNU/Linux
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 Obsoletes:	encompass-uri-devel
 
 %description static
