@@ -2,7 +2,7 @@
 %bcond_without	static_libs	# don't build static library
 #
 Summary:	Elysium GNU/Linux Utilities Library
-Summary(pl):	Biblioteka narzêdziowa Elysium GNU/Linux
+Summary(pl.UTF-8):   Biblioteka narzÄ™dziowa Elysium GNU/Linux
 Name:		libelysium
 Version:	0.99.9
 Release:	1
@@ -28,12 +28,12 @@ Obsoletes:	encompass-uri
 Utility library for applications in the Elysium GNU/Linux
 distribution.
 
-%description -l pl
-Biblioteka narzêdziowa dla aplikacji w dystrybucji Elysium GNU/Linux.
+%description -l pl.UTF-8
+Biblioteka narzÄ™dziowa dla aplikacji w dystrybucji Elysium GNU/Linux.
 
 %package devel
 Summary:	Elysium GNU/Linux Utilities Library Development Files
-Summary(pl):	Pliki dla programistów u¿ywaj±cych biblioteki narzêdziowej Elysium GNU/Linux
+Summary(pl.UTF-8):   Pliki dla programistÃ³w uÅ¼ywajÄ…cych biblioteki narzÄ™dziowej Elysium GNU/Linux
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	glib2-devel
@@ -43,12 +43,12 @@ Obsoletes:	encompass-uri-devel
 %description devel
 Includes files used for developing Elysium GNU/Linux applications.
 
-%description devel -l pl
-Pliki nag³ówkowe do tworzenia aplikacji Elysium GNU/Linux.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe do tworzenia aplikacji Elysium GNU/Linux.
 
 %package static
 Summary:	Elysium GNU/Linux Utilities static library
-Summary(pl):	Statyczna biblioteka narzêdziowa Elysium GNU/Linux
+Summary(pl.UTF-8):   Statyczna biblioteka narzÄ™dziowa Elysium GNU/Linux
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Obsoletes:	encompass-uri-devel
@@ -56,8 +56,8 @@ Obsoletes:	encompass-uri-devel
 %description static
 Elysium GNU/Linux Utilities static library.
 
-%description static -l pl
-Statyczna biblioteka narzêdziowa Elysium GNU/Linux.
+%description static -l pl.UTF-8
+Statyczna biblioteka narzÄ™dziowa Elysium GNU/Linux.
 
 %prep
 %setup -q
