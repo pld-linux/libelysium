@@ -2,7 +2,7 @@
 %bcond_without	static_libs	# don't build static library
 #
 Summary:	Elysium GNU/Linux Utilities Library
-Summary(pl.UTF-8):   Biblioteka narzędziowa Elysium GNU/Linux
+Summary(pl.UTF-8):	Biblioteka narzędziowa Elysium GNU/Linux
 Name:		libelysium
 Version:	0.99.9
 Release:	1
@@ -33,7 +33,7 @@ Biblioteka narzędziowa dla aplikacji w dystrybucji Elysium GNU/Linux.
 
 %package devel
 Summary:	Elysium GNU/Linux Utilities Library Development Files
-Summary(pl.UTF-8):   Pliki dla programistów używających biblioteki narzędziowej Elysium GNU/Linux
+Summary(pl.UTF-8):	Pliki dla programistów używających biblioteki narzędziowej Elysium GNU/Linux
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	glib2-devel
@@ -48,7 +48,7 @@ Pliki nagłówkowe do tworzenia aplikacji Elysium GNU/Linux.
 
 %package static
 Summary:	Elysium GNU/Linux Utilities static library
-Summary(pl.UTF-8):   Statyczna biblioteka narzędziowa Elysium GNU/Linux
+Summary(pl.UTF-8):	Statyczna biblioteka narzędziowa Elysium GNU/Linux
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Obsoletes:	encompass-uri-devel
